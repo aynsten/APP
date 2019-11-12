@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.list {
+  padding: 30rpx;
+}
+.list .list-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #EAEAEA;
+    height: 117rpx;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.list .describe {
+    width: 550rpx;
+    font-size: 30rpx;
+    color: #353535;
+}
+.list .describe .name {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+}
+.list .describe .name .phone {
+        margin-left: 20rpx;
+        font-size: 24rpx;
+        color: #808080;
+}
+.list .describe .date {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 24rpx;
+      color: #808080;
+}
+.list .money {
+    width: 200rpx;
+    font-size: 36rpx;
+    color: #E52020;
+    font-weight: 500;
+    text-align: right;
+}
+.list .money text {
+      margin-left: 10rpx;
+}
+.InAuditList {
+  padding: 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  height: 157rpx;
+  border-bottom: 1px solid #EAEAEA;
+}
+.InAuditList .describe {
+    width: 450rpx;
+}
+.InAuditList .describe .name {
+      font-size: 24rpx;
+      color: #888888;
+      padding-bottom: 10rpx;
+}
+.InAuditList .describe .title {
+      font-size: 28rpx;
+      color: #353535;
+}
+.InAuditList .examine {
+    width: 300rpx;
+    text-align: right;
+}
+.InAuditList .examine .date {
+      font-size: 20rpx;
+      color: #888888;
+}
+.InAuditList .examine .money {
+      font-size: 24rpx;
+      color: #353535;
+}
+.InAuditList .examine .statesuccess {
+      color: #32A537;
+      font-size: 24rpx;
+}
+.InAuditList .examine .stateerror {
+      color: #E52020;
+      font-size: 24rpx;
+}
+

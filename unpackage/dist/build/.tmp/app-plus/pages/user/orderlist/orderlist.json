@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#fa4c4c",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "我的订单",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "uni-load-more": "/components/uni-load-more/uni-load-more"
+  }
+}

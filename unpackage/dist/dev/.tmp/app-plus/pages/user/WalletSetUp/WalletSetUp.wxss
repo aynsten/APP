@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.form-box {
+  padding: 30rpx;
+}
+.form-box .uni-column {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 80rpx;
+}
+.form-box .uni-column label {
+      font-size: 28rpx;
+      width: 25%;
+}
+.form-box .uni-column .uni-input {
+      font-size: 24rpx;
+      height: 80rpx;
+      border-bottom: 1px solid #D1D1D1;
+      width: 75%;
+}
+.form-box .setup {
+    background: #4FBA4A;
+    width: 320rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    color: #FFFFFF;
+    border: none;
+    margin: 40rpx auto;
+    font-size: 28rpx;
+    border-radius: 60rpx;
+}
+.form-box .describe {
+    display: block;
+    width: 100%;
+    font-size: 24rpx;
+    color: #888888;
+    text-align: center;
+}
+uni-button:after {
+  border: none;
+}
+

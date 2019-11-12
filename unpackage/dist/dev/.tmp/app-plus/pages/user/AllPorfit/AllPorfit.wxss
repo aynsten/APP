@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.list.data-v-5211001f {
+  padding: 30rpx;
+}
+.list .list-item.data-v-5211001f {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #EAEAEA;
+    height: 117rpx;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.list .describe.data-v-5211001f {
+    width: 550rpx;
+    font-size: 30rpx;
+    color: #353535;
+}
+.list .describe .name.data-v-5211001f {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+}
+.list .describe .name .phone.data-v-5211001f {
+        margin-left: 20rpx;
+        font-size: 24rpx;
+        color: #808080;
+}
+.list .describe .date.data-v-5211001f {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 24rpx;
+      color: #808080;
+}
+.list .money.data-v-5211001f {
+    width: 200rpx;
+    font-size: 36rpx;
+    color: #E52020;
+    font-weight: 500;
+    text-align: right;
+}
+.list .money text.data-v-5211001f {
+      margin-left: 10rpx;
+}
+.InAuditList.data-v-5211001f {
+  padding: 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  border-bottom: 1px solid #EAEAEA;
+}
+.InAuditList .describe.data-v-5211001f {
+    width: 450rpx;
+}
+.InAuditList .describe .name.data-v-5211001f {
+      font-size: 24rpx;
+      color: #888888;
+      padding-bottom: 10rpx;
+}
+.InAuditList .describe .title.data-v-5211001f {
+      font-size: 28rpx;
+      color: #353535;
+}
+.InAuditList .examine.data-v-5211001f {
+    width: 300rpx;
+    text-align: right;
+}
+.InAuditList .examine .date.data-v-5211001f {
+      font-size: 20rpx;
+      color: #888888;
+}
+.InAuditList .examine .money.data-v-5211001f {
+      font-size: 24rpx;
+      color: #353535;
+}
+.InAuditList .examine .statesuccess.data-v-5211001f {
+      color: #32A537;
+      font-size: 24rpx;
+}
+.InAuditList .examine .stateerror.data-v-5211001f {
+      color: #E52020;
+      font-size: 24rpx;
+}
+

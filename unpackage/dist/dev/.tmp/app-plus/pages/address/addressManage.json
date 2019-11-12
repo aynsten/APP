@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "k-picker": "/pages/address/K-picker"
+  }
+}
