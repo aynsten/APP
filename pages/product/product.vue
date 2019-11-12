@@ -40,8 +40,8 @@
 				</view>
 				<text class="yticon icon-you"></text>
 			</view>
-			
-			
+
+
 			<view class="c-row b-b">
 				<text class="tit">服务</text>
 				<view class="bz-list con">
@@ -55,7 +55,7 @@
 				<text>图文详情</text>
 			</view>
 			<div>
-				<img :src="datagroup.detailImg"  style="width: 100%" mode="widthFix"></img>
+				<img :src="datagroup.detailImg" style="width: 100%" mode="widthFix"></img>
 			</div>
 		</view>
 		<!-- 底部操作菜单 -->
@@ -115,7 +115,7 @@
 					<view class="item-list">
 						<text class="tit" v-for="(item,index) in colorlist" :key="index" v-if="item.store == tempstore" @click="colorchecked(item,index)"
 						 :class="coloractive == index?'selected':''">
-							{{item.label}}
+							{{item.color}}({{item.label}})
 						</text>
 					</view>
 				</view>
@@ -213,7 +213,7 @@
 						if (res.data == '') {}
 					}
 				})
-				
+
 				// 获取登录状态
 				uni.getStorage({
 					key: "hasLogin",
@@ -248,8 +248,8 @@
 				})
 			},
 			//分享
-			share(){
-				this.$refs.share.toggleMask();	
+			share() {
+				this.$refs.share.toggleMask();
 			},
 			// 获取收藏状态
 			WhetherCollection() {
