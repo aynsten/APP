@@ -21,8 +21,8 @@
 				<image :src="item.mainImg"></image>
 				<view class="right">
 					<text class="title clamp">{{item.stylename}}</text>
-					<text  class="spec" >尺码 {{item.sizegroup.size}}</text> --
-					<text class="spec" >颜色 {{item.colorgroup.label}}</text>
+					<text  class="spec" >尺码 : {{item.sizegroup.size}}</text>
+					<text class="spec" >颜色 : {{item.colorgroup.color}} ({{item.colorgroup.label}})</text>
 					<view class="price-box">
 						<text class="price">￥{{item.orderPrice | NumToFixed}}</text>
 						<text class="number">x {{item.orderQty}}</text>
@@ -282,8 +282,8 @@
 			image {
 				flex-shrink: 0;
 				display: block;
-				width: 140upx;
-				height: 140upx;
+				width: 180upx;
+				height: 180upx;
 				border-radius: 4upx;
 			}
 
@@ -299,8 +299,13 @@
 			}
 
 			.spec {
+				display: block;
+				width: 100%;
 				font-size: 26upx;
 				color: $font-color-light;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
 			}
 
 			.price-box {

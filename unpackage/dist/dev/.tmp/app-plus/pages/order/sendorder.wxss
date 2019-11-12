@@ -124,8 +124,8 @@ page {
           -ms-flex-negative: 0;
               flex-shrink: 0;
       display: block;
-      width: 140rpx;
-      height: 140rpx;
+      width: 160rpx;
+      height: 160rpx;
       border-radius: 4rpx;
 }
 .goods-section .g-item .right {
@@ -141,8 +141,13 @@ page {
       color: #303133;
 }
 .goods-section .g-item .spec {
+      display: block;
       font-size: 26rpx;
       color: #909399;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+      white-space: nowrap;
 }
 .goods-section .g-item .price-box {
       display: -webkit-box;

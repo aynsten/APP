@@ -20,8 +20,9 @@
 				<image :src="item.mainImg"></image>
 				<view class="right">
 					<text class="title clamp">{{item.stylename}}</text>
-						<text  class="spec" >尺码 {{item.sizegroup.size}}</text> --
-						<text class="spec" >颜色 {{item.colorgroup.color}}</text>
+					<text class="spec">尺码 : {{item.sizegroup.size}}</text>
+					<text class="spec">颜色 : {{item.colorgroup.color}} ({{item.colorgroup.label}})
+					</text>
 					<view class="price-box">
 						<text class="price">￥{{item.orderPrice}}</text>
 						<text class="number">x {{item.orderQty}}</text>
@@ -104,8 +105,8 @@
 				},
 				success: (res) => {
 					if (res.data.statusCode == requestsuccess) {
-						res.data.data.forEach(item=>{
-							if(item.hlIsDefault =='Y'){
+						res.data.data.forEach(item => {
+							if (item.hlIsDefault == 'Y') {
 								that.tempaddressData = item
 							}
 						})
@@ -271,8 +272,8 @@
 			image {
 				flex-shrink: 0;
 				display: block;
-				width: 140upx;
-				height: 140upx;
+				width: 160upx;
+				height: 160upx;
 				border-radius: 4upx;
 			}
 
@@ -288,8 +289,12 @@
 			}
 
 			.spec {
+				display: block;
 				font-size: 26upx;
 				color: $font-color-light;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
 			}
 
 			.price-box {

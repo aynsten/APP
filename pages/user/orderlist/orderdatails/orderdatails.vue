@@ -5,7 +5,7 @@
 				<image :src="item.mainImg"></image>
 				<view class="right">
 					<text class="title clamp">{{item.styleDesc}}</text>
-					<text class="spec">颜色：{{item.color}}</text> --
+					<text class="spec">颜色：{{item.color}}({{item.label}})</text>
 					<text class="spec">尺寸：{{item.size}}</text>
 					<view class="price-box">
 						<text class="price">￥{{item.price | NumToFixed}}</text>
@@ -195,8 +195,8 @@
 			image {
 				flex-shrink: 0;
 				display: block;
-				width: 140upx;
-				height: 140upx;
+				width: 160upx;
+				height: 160upx;
 				border-radius: 4upx;
 			}
 
@@ -212,8 +212,13 @@
 			}
 
 			.spec {
+				display: block;
+				width: 100%;
 				font-size: 26upx;
 				color: $font-color-light;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
 			}
 
 			.price-box {

@@ -21,10 +21,10 @@
 						<view class="item-right">
 							<text class="clamp title">{{item.stylename}}</text>
 							<text class="attr">
-							
-									<text >尺码：{{item.sizegroup.size}}</text> -
-									<text >颜色：{{item.colorgroup.label}}</text>
-							
+								<text>尺码 ：{{item.sizegroup.size}}</text>
+							</text>
+							<text class="attr">
+								<text>颜色 ：{{item.colorgroup.color}}({{item.colorgroup.label}})</text>
 							</text>
 							<text class="price">¥{{item.price | NumToFixed}}</text>
 							<uni-number-box class="step" :min="1" :value="item.orderQty" :index="index" @eventChange="numberChange"></uni-number-box>
@@ -344,8 +344,9 @@
 			.attr {
 				font-size: $font-sm + 2upx;
 				color: $font-color-light;
-				height: 50upx;
-				line-height: 50upx;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
 			}
 
 			.price {
