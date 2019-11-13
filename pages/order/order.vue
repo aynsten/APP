@@ -31,11 +31,11 @@
 				<!-- <view class="price-box">
 					<text class="price">{{item.totalAmount | NumToFixed}} ({{item.country}})</text>
 				</view> -->
-				<view class="action-box b-t" v-if="item.newOrderStatus ==10">
+				<view class="action-box b-t" v-if="item.newOrderStatus ==10 &&customer ==null">
 					<button class="action-btn" @click.stop="cancelOrder(item)">取消订单</button>
-					<!-- <button class="action-btn recom" @click="pay(item)">立即支付</button> -->
+					<button class="action-btn recom" @click="pay(item)">立即支付</button>
 				</view>
-				<view class="action-box b-t" v-if="item.newOrderStatus ==20">
+				<view class="action-box b-t" v-if="item.newOrderStatus ==20 &&customer ==null">
 					<button class="action-btn recom" @click.stop="confirmlOrder(item)">确认收货</button>
 				</view>
 			</view>
@@ -89,6 +89,7 @@
 				},
 				pageIndex: null,
 				totalPages: null,
+				customer: null,
 			};
 		},
 
@@ -96,7 +97,11 @@
 			if (options.state == undefined) {
 				options.state = 0
 			}
+
 			this.tabCurrentIndex = +options.state;
+			if (options.customer !== undefined) {
+				this.customer = options.customer
+			}
 		},
 		onShow() {
 
@@ -139,6 +144,7 @@
 						newOrderStatus: newOrderStatus,
 						pageIndex: 1,
 						pageSize: 20,
+						customer: that.customer,
 						sortBy: "Sc_TimeCreated",
 						sortType: "desc"
 					},
@@ -185,6 +191,7 @@
 							newOrderStatus: newOrderStatus,
 							pageIndex: that.pageIndex + 1,
 							pageSize: 20,
+							customer: that.customer,
 							sortBy: "Sc_TimeCreated",
 							sortType: "desc"
 						},

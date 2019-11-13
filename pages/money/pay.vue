@@ -67,9 +67,40 @@
 			},
 			//确认支付
 			confirm: async function() {
-				uni.redirectTo({
-					url: '/pages/money/paySuccess'
-				})
+				if (this.payType == 1) {
+					uni.requestPayment({
+					    provider: 'wxpay',
+					    timeStamp: String(Date.now()),
+					    nonceStr: 'A1B2C3D4E5',
+					    package: 'prepay_id=wx20180101abcdefg',
+					    signType: 'MD5',
+					    paySign: '',
+					    success: function (res) {
+					        console.log('success:' + JSON.stringify(res));
+					    },
+					    fail: function (err) {
+					        console.log('fail:' + JSON.stringify(err));
+					    }
+					});
+				}
+				if (this.payType == 2) {
+					uni.requestPayment({
+						provider: 'alipay',
+						orderInfo: 'orderInfo',
+						success: function(res) {
+							console.log('success:' + JSON.stringify(res));
+						},
+						fail: function(err) {
+							console.log('fail:' + JSON.stringify(err));
+						}
+					});
+
+				}
+				if (this.payType == 3) {}
+
+				// uni.redirectTo({
+				// 	url: '/pages/money/paySuccess'
+				// })
 			},
 		}
 	}

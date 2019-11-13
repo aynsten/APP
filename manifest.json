@@ -24,8 +24,8 @@
             "Push" : {},
             "Speech" : {},
             "VideoPlayer" : {},
-            "Payment" : {},
-            "OAuth" : {}
+            "OAuth" : {},
+            "Payment" : {}
         },
         /* 模块配置 */
         "distribute" : {
@@ -71,6 +71,12 @@
                         "appid" : "wxcb2c1cc9abb8aae9",
                         "appsecret" : "ab4aa0f72fcea90c672484cbf29b9caa"
                     }
+                },
+                "payment" : {
+                    "alipay" : {}
+                },
+                "push" : {
+                    "unipush" : {}
                 }
             },
             "icons" : {

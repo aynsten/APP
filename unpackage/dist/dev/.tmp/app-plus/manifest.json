@@ -29,8 +29,8 @@
     "Push": {},
     "Speech": {},
     "VideoPlayer": {},
-    "Payment": {},
     "OAuth": {},
+    "Payment": {},
     "UniNView": {
       "description": "UniNView原生渲染"
     }
@@ -130,6 +130,12 @@
             "appid": "wxcb2c1cc9abb8aae9",
             "appsecret": "ab4aa0f72fcea90c672484cbf29b9caa"
           }
+        },
+        "payment": {
+          "alipay": {}
+        },
+        "push": {
+          "unipush": {}
         },
         "audio": {
           "mp3": {

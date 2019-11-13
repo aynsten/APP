@@ -166,6 +166,7 @@
 									if (res.confirm == true) {
 										uni.redirectTo({
 											url: './order'
+											// url:"../money/pay"
 										})
 									}
 								}

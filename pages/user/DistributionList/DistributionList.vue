@@ -2,7 +2,7 @@
 	<view>
 		<view class="list">
 			<image src="../../../static/notdata.png" v-if="listdata.length<=0" style="width: 100%" mode="widthFix"></image>
-			<view class="list-item" v-for="(item,index) in listdata" :key="index">
+			<view class="list-item" v-for="(item,index) in listdata" :key="index" @click="navtoorderlist(item)">
 				<view class="describe">
 					<view class="">
 						账号<text class="name">:{{item.phoneAccount}}</text>
@@ -66,7 +66,11 @@
 			})
 		},
 		methods: {
-
+			navtoorderlist(item){
+				uni.navigateTo({
+					url:'../../order/order?customer='+item.customer
+				})
+			}
 		}
 	}
 </script>

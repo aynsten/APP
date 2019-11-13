@@ -5,7 +5,7 @@
 				<image :src="item.mainImg"></image>
 				<view class="right">
 					<text class="title clamp">{{item.styleDesc}}</text>
-					<text class="spec">颜色：{{item.color}}({{item.label}})</text>
+					<text class="spec">颜色：{{item.colorDesc}}({{item.label}})</text>
 					<text class="spec">尺寸：{{item.size}}</text>
 					<view class="price-box">
 						<text class="price">￥{{item.price | NumToFixed}}</text>
